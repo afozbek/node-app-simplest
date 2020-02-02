@@ -6,7 +6,6 @@ http.createServer(function (req, res) {
  console.log(url);
  res.write(url);
  res.write("<br>");
- res.write("<p>This will be new content!!</p>");
  res.write("<a href='http://node.furkanozbek.com/app'>Home Page</a>  -  ")
  res.write("<a href='http://node.furkanozbek.com/app/contact'>Contact Page</a>  -  ");
  res.write("<a href='http://node.furkanozbek.com/app/about'>About Page</a>")
@@ -15,7 +14,7 @@ http.createServer(function (req, res) {
     res.write('<h1>Abdullah Furkan Ozbek<h1>'); //write a response
     res.end(); //end the response
  }else if(url ==='/app/contact'){
-    res.write('<div><h1>Contact Page<h1><a href="mailto:furkanozbek1995@gmail.com">Send Mail To Me</a></div>'); //write a response
+    res.write('<div><h1>Contact Page </h1><a href="mailto:furkanozbek1995@gmail.com">Send Mail To Me</a></div>'); //write a response
     res.end(); //end the response
  }else{
     res.write('<h1>Hello World!</h1>'); //write a response
