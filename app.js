@@ -6,6 +6,7 @@ http.createServer(function (req, res) {
  console.log(url);
  res.write(url);
  res.write("<br>");
+ res.write("<p>This will be new content!!</p>");
  res.write("<a href='http://node.furkanozbek.com/app'>Home Page</a>  -  ")
  res.write("<a href='http://node.furkanozbek.com/app/contact'>Contact Page</a>  -  ");
  res.write("<a href='http://node.furkanozbek.com/app/about'>About Page</a>")
